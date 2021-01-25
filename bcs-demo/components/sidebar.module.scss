@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    max-width: 200px;
+    top: 0;
+    left: 0;
+    padding: 20px; 
+    z-index: 9999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a {
+        display: block;
+        font: 20px Arial, Helvetica, sans-serif;
+        color: #000;
+        margin: 30px 15px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    background: #000;
+    margin: 10px 0 40px 0;
+    border-radius: 100px;
+}
+
+.smaller {
+    padding-top: 20px;
+
+    a {
+        color: rgb(82, 82, 82);
+        font-size: 1em;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

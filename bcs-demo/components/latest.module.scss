@@ -1,0 +1,69 @@
+.container {
+    position: relative;
+    margin: 50px auto;
+    padding: 0 20px 0 100px;
+    max-width: 1100px;
+}
+
+.chapters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-gap: 20px;
+    row-gap: 70px;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            opacity: 0.8;
+            color: #FFB103;
+        }
+    }
+
+    h2 {
+        grid-column: 1 / -1;
+        letter-spacing: -0.4px;
+        margin-bottom: -30px;
+    }
+
+    img {
+        width: 300px;
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 5px;
+    }
+
+    .title {
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+    }
+
+    .chnum {
+        margin: 0;
+        font-size: 0.96em;
+        color: rgb(82, 82, 82);
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: -10px 0;
+
+        .time {
+            font-weight: 600;
+        }
+    }
+}
